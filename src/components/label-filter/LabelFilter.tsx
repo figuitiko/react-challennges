@@ -7,6 +7,8 @@ const LabelFilter: React.FC = () => {
   const animalClass = Array.from(new Set(animalData.map(animal => animal.class)))
   const filteredAnimals = selectedClass.length === 0 ? animalData : animalData.filter(animal => selectedClass?.includes(animal.class))
   const handleClassAnimal = (item: string): void => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
     document.startViewTransition(() => {
       flushSync(() => {
         if (selectedClass.includes(item)) {
