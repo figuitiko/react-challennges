@@ -94,6 +94,9 @@ const Navigation: React.FC = () => {
                   <li>
                     <Link to='/label-filter' className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'>Label filter</Link>
                   </li>
+                  <li>
+                    <Link to='/tree' className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'>Tree</Link>
+                  </li>
                 </ul>
               </div>
             </li>
