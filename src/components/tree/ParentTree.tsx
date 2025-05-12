@@ -4,7 +4,7 @@ interface ParentProps {
   children: React.ReactNode
   childs: ChildProps[]
 }
-const ParentTree: React.FC<ParentProps> = ({ children, childs }: ParentProps) => {
+const ParentTree: React.FC<ParentProps> = ({ children }: ParentProps) => {
   return (
     <div className='flex flex-col'>
     {
